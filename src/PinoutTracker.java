@@ -24,7 +24,38 @@ public class PinoutTracker {
     private String a8 = "";
     Scanner pinSetter = new Scanner(System.in);
     public void layoutSetter(){
-
+        System.out.println("Assign a module pin to Digital pin D1");
+        d1 = pinSetter.nextLine();
+        System.out.println("Pin D1 to:" + d1);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D2");
+        d2 = pinSetter.nextLine();
+        System.out.println("Pin D2 to:" + d2);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D3");
+        d3 = pinSetter.nextLine();
+        System.out.println("Pin D3 to:" + d3);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D4");
+        d4 = pinSetter.nextLine();
+        System.out.println("Pin D4 to:" + d4);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D5");
+        d5 = pinSetter.nextLine();
+        System.out.println("Pin D5 to:" + d5);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D6");
+        d6 = pinSetter.nextLine();
+        System.out.println("Pin D6 to:" + d6);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D7");
+        d7 = pinSetter.nextLine();
+        System.out.println("Pin D7 to:" + d7);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D8");
+        d8 = pinSetter.nextLine();
+        System.out.println("Pin D8 to:" + d8);
+        System.out.println("-----------------------------------------------");
     }
     public void layoutGetter(){
 
