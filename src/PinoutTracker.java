@@ -22,6 +22,8 @@ public class PinoutTracker {
     private String a6 = "";
     private String a7 = "";
     private String a8 = "";
+    private String rx = "";
+    private String tx = "";
     Scanner pinSetter = new Scanner(System.in);
     public void layoutSetter(){
         System.out.println("Assign a module pin to Digital pin D1");
@@ -55,6 +57,34 @@ public class PinoutTracker {
         System.out.println("Assign a module pin to Digital pin D8");
         d8 = pinSetter.nextLine();
         System.out.println("Pin D8 to:" + d8);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D9");
+        d9 = pinSetter.nextLine();
+        System.out.println("Pin D9 to:" + d9);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D10");
+        d10 = pinSetter.nextLine();
+        System.out.println("Pin D10 to:" + d10);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D11");
+        d11 = pinSetter.nextLine();
+        System.out.println("Pin D11 to:" + d11);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D12");
+        d12 = pinSetter.nextLine();
+        System.out.println("Pin D12 to:" + d12);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D13");
+        d13 = pinSetter.nextLine();
+        System.out.println("Pin D13 to:" + d13);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Digital pin D14");
+        d14 = pinSetter.nextLine();
+        System.out.println("Pin D14 to:" + d14);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A1");
+        a1 = pinSetter.nextLine();
+        System.out.println("Pin A1 to:" + a1);
         System.out.println("-----------------------------------------------");
     }
     public void layoutGetter(){
