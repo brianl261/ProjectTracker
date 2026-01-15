@@ -24,7 +24,12 @@ public class PinoutTracker {
     private String a8 = "";
     private String rx = "";
     private String tx = "";
-    Scanner pinSetter = new Scanner(System.in);
+    private Scanner pinSetter;
+
+    public PinoutTracker(){
+        pinSetter = new Scanner(System.in);
+    }
+
     public void layoutSetter(){
         System.out.println("Assign a module pin to Digital pin D1");
         d1 = pinSetter.nextLine();
