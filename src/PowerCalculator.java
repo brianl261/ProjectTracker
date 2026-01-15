@@ -29,10 +29,13 @@ public class PowerCalculator {
             return "Current draw falls within limits";
         }
         public int wattUsage(){
+            int W = 0;
+            int Voltage = 0;
+            System.out.println("Enter voltage source voltage (V)");
+            Voltage = Amp
 
 
-
-            return
+            return W;
         }
     }
 
