@@ -86,8 +86,47 @@ public class PinoutTracker {
         a1 = pinSetter.nextLine();
         System.out.println("Pin A1 to:" + a1);
         System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A2");
+        a2 = pinSetter.nextLine();
+        System.out.println("Pin A2 to:" + a2);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A3");
+        a3 = pinSetter.nextLine();
+        System.out.println("Pin A3 to:" + a3);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A4");
+        a4 = pinSetter.nextLine();
+        System.out.println("Pin A4 to:" + a4);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A5");
+        a5 = pinSetter.nextLine();
+        System.out.println("Pin A5 to:" + a5);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A6");
+        a6 = pinSetter.nextLine();
+        System.out.println("Pin A6 to:" + a6);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A7");
+        a7 = pinSetter.nextLine();
+        System.out.println("Pin A7 to:" + a7);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Analog pin A8");
+        a8 = pinSetter.nextLine();
+        System.out.println("Pin A8 to:" + a8);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Serial pin RX");
+        rx = pinSetter.nextLine();
+        System.out.println("Pin RX to:" + rx);
+        System.out.println("-----------------------------------------------");
+        System.out.println("Assign a module pin to Serial pin TX");
+        tx = pinSetter.nextLine();
+        System.out.println("Pin TX to:" + tx);
+        System.out.println("-----------------------------------------------");
     }
     public void layoutGetter(){
+        System.out.println(d13 + " ->D13 {{{}}}{{{}}} D12<- " + d12);
+        System.out.println(d13 + " ->D13 {{{}}}{{{}}} D12<- " + d12);
 
     }
 }
+

@@ -28,6 +28,12 @@ public class PowerCalculator {
             }
             return "Current draw falls within limits";
         }
+        public int wattUsage(){
+
+
+
+            return
+        }
     }
 
 
