@@ -12,11 +12,12 @@ public class ProductSourceRating {
     }
     public String AddAvoid(){
         System.out.println("input a product name");
-        String avoid = next.nextLine();
-
+        avoid.add(next.nextLine());
+        System.out.println(avoid);
     }
     public String AddgoodProducts(){
         System.out.println("input a product name");
-        String good = next.nextLine();
+        good.add(next.nextLine());
+        System.out.println(avoid);
     }
 }

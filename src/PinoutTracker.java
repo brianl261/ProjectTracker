@@ -41,96 +41,128 @@ public class PinoutTracker {
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D2");
         d2 = pinSetter.nextLine();
-        if(d2=="LED"){
+        if(d2.equals("LED")){
             currentUsed += 20;
         }
-        if(d2 == ""){
+        if(d2.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d2.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D2 to:" + d2);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D3");
         d3 = pinSetter.nextLine();
-        if(d3=="LED"){
+        if(d3.equals("LED")){
             currentUsed += 20;
         }
-        if(d3 == ""){
+        if(d3.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d3.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D3 to:" + d3);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D4");
         d4 = pinSetter.nextLine();
-        if(d4=="LED"){
+        if(d4.equals("LED")){
             currentUsed += 20;
         }
-        if(d4 == ""){
+        if(d4.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d4.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D4 to:" + d4);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D5");
         d5 = pinSetter.nextLine();
-        if(d5=="LED"){
+        if(d5.equals("LED")){
             currentUsed += 20;
         }
-        if(d5 == ""){
+        if(d5.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d5.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D5 to:" + d5);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D6");
         d6 = pinSetter.nextLine();
-        if(d6=="LED"){
+        if(d6.equals("LED")){
             currentUsed += 20;
         }
-        if(d6 == ""){
+        if(d6.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d6.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D6 to:" + d6);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D7");
         d7 = pinSetter.nextLine();
-        if(d7=="LED"){
+        if(d7.equals("LED")){
             currentUsed += 20;
         }
-        if(d7 == ""){
+        if(d7.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d7.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D7 to:" + d7);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D8");
         d8 = pinSetter.nextLine();
-        if(d8=="LED"){
+        if(d8.equals("LED")){
             currentUsed += 20;
         }
-        if(d8 == ""){
+        if(d8.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d8.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D8 to:" + d8);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D9");
         d9 = pinSetter.nextLine();
-        if(d9=="LED"){
+        if(d9.equals("LED")){
             currentUsed += 20;
         }
-        if(d9 == ""){
+        if(d9.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d9.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D9 to:" + d9);
@@ -138,35 +170,47 @@ public class PinoutTracker {
         System.out.println("Assign a module pin to Digital pin D10");
         d10 = pinSetter.nextLine();
         System.out.println("Pin D10 to:" + d10);
-        if(d10=="LED"){
+        if(d10.equals("LED")){
             currentUsed += 20;
         }
-        if(d10 == ""){
+        if(d10.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d10.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D11");
         d11 = pinSetter.nextLine();
-        if(d11=="LED"){
+        if(d11.equals("LED")){
             currentUsed += 20;
         }
-        if(d11 == ""){
+        if(d11.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d11.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D11 to:" + d11);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D12");
         d12 = pinSetter.nextLine();
-        if(d12=="LED"){
+        if(d12.equals("LED")){
             currentUsed += 20;
         }
-        if(d12 == ""){
+        if(d12.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d12.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin D12 to:" + d12);
@@ -174,131 +218,174 @@ public class PinoutTracker {
         System.out.println("Assign a module pin to Digital pin D13");
         d13 = pinSetter.nextLine();
         System.out.println("Pin D13 to:" + d13);
-        if(d13=="LED"){
+        if(d13.equals("LED")){
             currentUsed += 20;
         }
-        if(d13 == ""){
+        if(d13.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(d13.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A0");
         a0 = pinSetter.nextLine();
-        if(a0=="LED"){
+        if(a0.equals("LED")){
             currentUsed += 20;
         }
-        if(a0 == ""){
+        if(a0.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a0.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A0 to:" + a0);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A1");
         a1 = pinSetter.nextLine();
-        if(a1=="LED"){
+        if(a1.equals("LED")){
             currentUsed += 20;
         }
-        if(a1 == ""){
+        if(a1.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a1.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A1 to:" + a1);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A2");
         a2 = pinSetter.nextLine();
-        if(a2=="LED"){
+        if(a2.equals("LED")){
             currentUsed += 20;
         }
-        if(a2 == ""){
+        if(a2.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a2.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A2 to:" + a2);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A3");
         a3 = pinSetter.nextLine();
-        if(a3=="LED"){
+        if(a3.equals("LED")){
             currentUsed += 20;
         }
-        if(a3 == ""){
+        if(a3.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a3.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A3 to:" + a3);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A4");
         a4 = pinSetter.nextLine();
-        if(a4=="LED"){
+        if(a4.equals("LED")){
             currentUsed += 20;
         }
-        if(a4 == ""){
+        if(a4.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a4.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A4 to:" + a4);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A5");
         a5 = pinSetter.nextLine();
-        if(a5=="LED"){
+        if(a5.equals("LED")){
             currentUsed += 20;
         }
-        if(a5 == ""){
+        if(a5.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a5.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A5 to:" + a5);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A6");
         a6 = pinSetter.nextLine();
-        if(a6=="LED"){
+        if(a6.equals("LED")){
             currentUsed += 20;
         }
-        if(a6 == ""){
+        if(a6.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a6.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A6 to:" + a6);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A7");
         a7 = pinSetter.nextLine();
-        if(a7=="LED"){
+        if(a7.equals("LED")){
             currentUsed += 20;
         }
-        if(a7 == ""){
+        if(a7.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(a7.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin A7 to:" + a7);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Serial pin RX");
-        rx = pinSetter.nextLine();
-        if(rx=="LED"){
+        if(rx.equals("LED")){
             currentUsed += 20;
         }
-        if(rx == ""){
+        if(rx.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(rx.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin RX to:" + rx);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Serial pin TX");
         tx = pinSetter.nextLine();
-        if(tx=="LED"){
+        if(tx.equals("LED")){
             currentUsed += 20;
         }
-        if(tx == ""){
+        if(tx.equals("")){
             currentUsed += 0;
-        } else{
+        }
+        if(tx.equals("Motor")){
+            System.out.println(PinoutTracker.RED + "Please use a motor control module");
+        }
+        else{
             currentUsed += 30;
         }
         System.out.println("Pin TX to:" + tx);
