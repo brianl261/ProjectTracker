@@ -304,6 +304,26 @@ public class PinoutTracker {
         System.out.println("Pin TX to:" + tx);
         System.out.println("-----------------------------------------------");
     }
+    public void currentSafety(){
+        if(currentUsed == 0){
+            System.out.println("Nothing is connected to this board");
+        }
+        if(currentUsed <= 300){
+            System.out.print(PinoutTracker.GREEN);
+            System.out.println("Your setup is using " + currentUsed + "miliamps");
+            System.out.print(PinoutTracker.RESET);
+        }
+        if((currentUsed > 300)&&(currentUsed <= 530)){
+            System.out.print(PinoutTracker.YELLOW);
+            System.out.println("Your setup is using " + currentUsed + "miliamps");
+            System.out.print(PinoutTracker.RESET);
+        }
+        if(currentUsed > 530){
+            System.out.print(PinoutTracker.RED);
+            System.out.println("Your setup is using " + currentUsed + "miliamps; Please remove a device");
+            System.out.print(PinoutTracker.RESET);
+        }
+    }
     public void layoutGetter(){
         System.out.println(PinoutTracker.PURPLE + d13 + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->D13 {{{}}}{{{}}} D12<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + d12);
         System.out.println(PinoutTracker.PURPLE + "3V3" + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->3V3 {{{}}}{{{}}} D11<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + d11);
