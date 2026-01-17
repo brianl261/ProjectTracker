@@ -32,6 +32,7 @@ public class Main {
             PowerCalc.MaxAmp();
             System.out.println();
             PowerCalc.CurrentDraw();
+            PowerCalc.SafetyCheck();
             System.out.println();
             PowerCalc.wattUsage();
         }

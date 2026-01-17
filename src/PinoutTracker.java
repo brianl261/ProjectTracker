@@ -503,7 +503,7 @@ public class PinoutTracker {
         System.out.println(PinoutTracker.RED + "Serial Pin RXD" +rx);
         System.out.println( "Serial Pin TXD" +tx);
     }
-    //Calculates the average mA/Pin
+    //Calculates the average mA per Pin
     public void AverageCurrentPerComponent(){
         double AvrAmp = currentUsed/numberOfPinsUsed ;
         System.out.println(PinoutTracker.GREEN + "The Average Amperage draw per component in your setup is: " + PinoutTracker.BLUE + AvrAmp + "mA");

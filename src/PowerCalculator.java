@@ -19,28 +19,33 @@ public class PowerCalculator {
         MaxAmp = Amp.nextInt();
     }
     //Compares StackedMiliamps from user input to MaxAmp
-    public String CurrentDraw(){
+    public void CurrentDraw() {
         boolean DeviceStackComplete = false;
         int nextDevice = 0;
         int StackedMiliAmps = 0;
         boolean unsafe = false;
-        while(DeviceStackComplete == false){
+        while (DeviceStackComplete == false) {
             System.out.println("Please input the current draw of a device being added");
             System.out.println("Type 0 to indicate you have added all devices");
             nextDevice = Amp.nextInt();
             StackedMiliAmps += nextDevice;
-            if(nextDevice == 0){
+            if (nextDevice == 0) {
                 DeviceStackComplete = true;
             }
         }
         mA = StackedMiliAmps;
-        if(StackedMiliAmps > MaxAmp){
+    }
+    public void SafetyCheck(){
+         boolean unsafe = false;
+        if(mA > MaxAmp){
             unsafe = true;
         }
         if(unsafe == true){
-            return "Current draw is too high, please remove a device";
+            System.out.println("Current draw is too high, please remove a device");
         }
-        return "Current draw falls within limits";
+        if(unsafe == false) {
+            System.out.println("Current draw falls within limits");
+        }
     }
     //Determines wattage usage
     public int wattUsage(){
