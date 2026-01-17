@@ -8,11 +8,11 @@ public class Main {
 
         System.out.println(PinoutTracker.PURPLE + "Select An Option for your project");
         System.out.println();
-        System.out.println(PinoutTracker.RED + "(A) Track Ardiuno Pins");
+        System.out.println(PinoutTracker.RED + "(A) Track Ardiuno Pins" + PinoutTracker.RESET);
         System.out.println();
-        System.out.println(PinoutTracker.GREEN + "(B) Calculate Amperage and Wattage");
+        System.out.println(PinoutTracker.GREEN + "(B) Calculate Amperage and Wattage" + PinoutTracker.RESET);
         System.out.println();
-        System.out.println(PinoutTracker.BLUE + "(C) Track What Products you want to and do not want to buy");
+        System.out.println(PinoutTracker.BLUE + "(C) Track What Products you want to and do not want to buy" + PinoutTracker.RESET);
         String option = line.nextLine();
         if((option.equals("A"))||(option.equals("a"))){
             System.out.println();
@@ -33,9 +33,11 @@ public class Main {
             System.out.println();
             PowerCalc.wattUsage();
         }
-        if((option.equals("B"))||(option.equals("b"))){
+        if((option.equals("C"))||(option.equals("c"))){
             PSR.AddAvoid();
             PSR.AddgoodProducts();
+            System.out.println(PinoutTracker.RED + "Avoid: " + PSR.avoid);
+            System.out.println(PinoutTracker.BLUE + "Safe to use: " +PSR.good);
         }
 
 
