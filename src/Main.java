@@ -41,8 +41,6 @@ public class Main {
             PSR.AddgoodProducts();
             System.out.println(PinoutTracker.RED + "Avoid: " + PSR.avoid);
             System.out.println(PinoutTracker.BLUE + "Safe to use: " +PSR.good);
-        } else {
-            System.out.println("Invalid option, please restart program");
         }
         System.out.println(PowerCalculator.YELLOW + "Please check manufacturer specifications if you are using this program \n to wire a project up");
 
