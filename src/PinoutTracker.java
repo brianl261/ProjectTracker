@@ -37,7 +37,8 @@ public class PinoutTracker {
     public PinoutTracker(){
         pinSetter = new Scanner(System.in);
     }
-
+    //This allows the user to set each pin to be used by a component
+    //Will refuse if the user attempts to connect a motor directly to a digital pin
     public void layoutSetter(){
         System.out.println("Enter \" LED\", or a component module name");
         System.out.println("-----------------------------------------------");
@@ -437,6 +438,7 @@ public class PinoutTracker {
         System.out.println("Pin TX to:" + tx);
         System.out.println("-----------------------------------------------");
     }
+    //Determines if a board configuration is safe by comparing the stacked current
     public void currentSafety(){
         if(currentUsed == 0){
             System.out.println("Nothing is connected to this board");
@@ -457,6 +459,7 @@ public class PinoutTracker {
             System.out.print(PinoutTracker.RESET);
         }
     }
+    //Displays the board layout in console
     public void layoutGetter(){
         System.out.println(PinoutTracker.PURPLE + d13 + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->D13 {{{}}}{{{}}} D12<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + d12);
         System.out.println(PinoutTracker.PURPLE + "3V3" + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->3V3 {{{}}}{{{}}} D11<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + d11);
@@ -475,6 +478,7 @@ public class PinoutTracker {
         System.out.println(PinoutTracker.PURPLE + "VIN" + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->VIN {{{}}}{{{}}} TXD<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + tx);
 
     }
+    //Displays the pins and string values in a chart format
     public void ChartLayoutGetter(){
         System.out.println(PinoutTracker.PURPLE + "Digital Pin D2" + d2 );
         System.out.println(PinoutTracker.PURPLE + "Digital Pin D3" + d3 );
@@ -499,6 +503,7 @@ public class PinoutTracker {
         System.out.println(PinoutTracker.RED + "Serial Pin RXD" +rx);
         System.out.println( "Serial Pin TXD" +tx);
     }
+    //Calculates the average mA/Pin
     public void AverageCurrentPerComponent(){
         double AvrAmp = currentUsed/numberOfPinsUsed ;
         System.out.println(PinoutTracker.GREEN + "The Average Amperage draw per component in your setup is: " + PinoutTracker.BLUE + AvrAmp + "mA");

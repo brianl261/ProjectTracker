@@ -13,12 +13,12 @@ public class PowerCalculator {
         Amp = new Scanner(System.in);
         MaxAmp = 0;
     }
-
+    //sets MaxAmp
     public void MaxAmp(){
         System.out.println(PowerCalculator.GREEN + "Enter the maximum allowed current draw" + PowerCalculator.RESET);
         MaxAmp = Amp.nextInt();
     }
-
+    //Compares StackedMiliamps from user input to MaxAmp
     public String CurrentDraw(){
         boolean DeviceStackComplete = false;
         int nextDevice = 0;
@@ -42,7 +42,7 @@ public class PowerCalculator {
         }
         return "Current draw falls within limits";
     }
-
+    //Determines wattage usage
     public int wattUsage(){
         double W = 0;
         double Voltage = 0;

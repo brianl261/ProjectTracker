@@ -14,6 +14,8 @@ public class Main {
         System.out.println();
         System.out.println(PinoutTracker.BLUE + "(C) Track What Products you want to and do not want to buy" + PinoutTracker.RESET);
         String option = line.nextLine();
+        //The following if-Statements allow the user to select
+        //which function to use
         if((option.equals("A"))||(option.equals("a"))){
             System.out.println();
             PT.layoutSetter();

@@ -14,7 +14,7 @@ public class ProductSourceRating {
     public static final String PURPLE = "\u001B[95m";
     public ProductSourceRating() {
     }
-
+    //Adds products to avoid list
     public void AddAvoid() {
         while (true) {
             System.out.println("Input a product name to avoid or type 'stop' to finish");
@@ -26,7 +26,7 @@ public class ProductSourceRating {
             System.out.println(ProductSourceRating.RED + "Avoid list: " + avoid + ProductSourceRating.RESET);
         }
     }
-
+    //Add products to good list
     public void AddgoodProducts() {
         while (true) {
             System.out.println("Input a good product name or type 'stop' to finish");
