@@ -6,8 +6,8 @@ public class PowerCalculator {
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[91m";
     public static final String GREEN = "\u001B[92m";
-    public static final String BLUE = "\\u001b[94m";
-    public static final String YELLOW = "\\u001B[93m";
+    public static final String BLUE = "\u001b[94m";
+    public static final String YELLOW = "\u001B[93m";
     public PowerCalculator(){
         mA = 0;
         Amp = new Scanner(System.in);
@@ -49,6 +49,7 @@ public class PowerCalculator {
         System.out.println("Enter voltage source voltage (V)");
         Voltage = Amp.nextDouble();
         W = (Voltage * mA);
+        System.out.println(W + "mW");
         return (int) W ;
     }
 }

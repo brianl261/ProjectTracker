@@ -3,9 +3,9 @@ public class PinoutTracker {
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[91m";
     public static final String GREEN = "\u001B[92m";
-    public static final String BLUE = "\\u001b[94m";
-    public static final String YELLOW = "\\u001B[93m";
-    public static final String PURPLE = "\u001B[35m";
+    public static final String BLUE = "\u001b[94m";
+    public static final String YELLOW = "\u001B[93m";
+    public static final String PURPLE = "\u001B[95m";
     private String d2 = "";
     private String d3 = "";
     private String d4 = "";
@@ -32,17 +32,20 @@ public class PinoutTracker {
     private String componentType = "";
     private int currentUsed = 0;
     private Scanner pinSetter;
+    private int numberOfPinsUsed = 0;
 
     public PinoutTracker(){
         pinSetter = new Scanner(System.in);
     }
 
     public void layoutSetter(){
+        System.out.println("Enter \" LED\", or a component module name");
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D2");
         d2 = pinSetter.nextLine();
         if(d2.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d2.equals("")){
             currentUsed += 0;
@@ -52,6 +55,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D2 to:" + d2);
         System.out.println("-----------------------------------------------");
@@ -59,6 +63,7 @@ public class PinoutTracker {
         d3 = pinSetter.nextLine();
         if(d3.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d3.equals("")){
             currentUsed += 0;
@@ -68,6 +73,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D3 to:" + d3);
         System.out.println("-----------------------------------------------");
@@ -75,6 +81,7 @@ public class PinoutTracker {
         d4 = pinSetter.nextLine();
         if(d4.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d4.equals("")){
             currentUsed += 0;
@@ -84,6 +91,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D4 to:" + d4);
         System.out.println("-----------------------------------------------");
@@ -91,6 +99,7 @@ public class PinoutTracker {
         d5 = pinSetter.nextLine();
         if(d5.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d5.equals("")){
             currentUsed += 0;
@@ -100,6 +109,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D5 to:" + d5);
         System.out.println("-----------------------------------------------");
@@ -107,6 +117,7 @@ public class PinoutTracker {
         d6 = pinSetter.nextLine();
         if(d6.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d6.equals("")){
             currentUsed += 0;
@@ -116,6 +127,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D6 to:" + d6);
         System.out.println("-----------------------------------------------");
@@ -123,6 +135,7 @@ public class PinoutTracker {
         d7 = pinSetter.nextLine();
         if(d7.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d7.equals("")){
             currentUsed += 0;
@@ -132,6 +145,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D7 to:" + d7);
         System.out.println("-----------------------------------------------");
@@ -139,6 +153,7 @@ public class PinoutTracker {
         d8 = pinSetter.nextLine();
         if(d8.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d8.equals("")){
             currentUsed += 0;
@@ -148,6 +163,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D8 to:" + d8);
         System.out.println("-----------------------------------------------");
@@ -155,6 +171,7 @@ public class PinoutTracker {
         d9 = pinSetter.nextLine();
         if(d9.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d9.equals("")){
             currentUsed += 0;
@@ -164,6 +181,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D9 to:" + d9);
         System.out.println("-----------------------------------------------");
@@ -172,6 +190,7 @@ public class PinoutTracker {
         System.out.println("Pin D10 to:" + d10);
         if(d10.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d10.equals("")){
             currentUsed += 0;
@@ -181,12 +200,14 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Digital pin D11");
         d11 = pinSetter.nextLine();
         if(d11.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d11.equals("")){
             currentUsed += 0;
@@ -196,6 +217,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D11 to:" + d11);
         System.out.println("-----------------------------------------------");
@@ -203,6 +225,7 @@ public class PinoutTracker {
         d12 = pinSetter.nextLine();
         if(d12.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d12.equals("")){
             currentUsed += 0;
@@ -212,6 +235,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin D12 to:" + d12);
         System.out.println("-----------------------------------------------");
@@ -220,6 +244,7 @@ public class PinoutTracker {
         System.out.println("Pin D13 to:" + d13);
         if(d13.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(d13.equals("")){
             currentUsed += 0;
@@ -229,12 +254,14 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Analog pin A0");
         a0 = pinSetter.nextLine();
         if(a0.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a0.equals("")){
             currentUsed += 0;
@@ -244,6 +271,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A0 to:" + a0);
         System.out.println("-----------------------------------------------");
@@ -251,6 +279,7 @@ public class PinoutTracker {
         a1 = pinSetter.nextLine();
         if(a1.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a1.equals("")){
             currentUsed += 0;
@@ -260,6 +289,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A1 to:" + a1);
         System.out.println("-----------------------------------------------");
@@ -267,6 +297,7 @@ public class PinoutTracker {
         a2 = pinSetter.nextLine();
         if(a2.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a2.equals("")){
             currentUsed += 0;
@@ -276,6 +307,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A2 to:" + a2);
         System.out.println("-----------------------------------------------");
@@ -283,6 +315,7 @@ public class PinoutTracker {
         a3 = pinSetter.nextLine();
         if(a3.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a3.equals("")){
             currentUsed += 0;
@@ -292,6 +325,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A3 to:" + a3);
         System.out.println("-----------------------------------------------");
@@ -299,6 +333,7 @@ public class PinoutTracker {
         a4 = pinSetter.nextLine();
         if(a4.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a4.equals("")){
             currentUsed += 0;
@@ -308,6 +343,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A4 to:" + a4);
         System.out.println("-----------------------------------------------");
@@ -315,6 +351,7 @@ public class PinoutTracker {
         a5 = pinSetter.nextLine();
         if(a5.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a5.equals("")){
             currentUsed += 0;
@@ -324,6 +361,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A5 to:" + a5);
         System.out.println("-----------------------------------------------");
@@ -331,6 +369,7 @@ public class PinoutTracker {
         a6 = pinSetter.nextLine();
         if(a6.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a6.equals("")){
             currentUsed += 0;
@@ -340,6 +379,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A6 to:" + a6);
         System.out.println("-----------------------------------------------");
@@ -347,6 +387,7 @@ public class PinoutTracker {
         a7 = pinSetter.nextLine();
         if(a7.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(a7.equals("")){
             currentUsed += 0;
@@ -356,12 +397,14 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin A7 to:" + a7);
         System.out.println("-----------------------------------------------");
         System.out.println("Assign a module pin to Serial pin RX");
         if(rx.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(rx.equals("")){
             currentUsed += 0;
@@ -371,6 +414,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin RX to:" + rx);
         System.out.println("-----------------------------------------------");
@@ -378,6 +422,7 @@ public class PinoutTracker {
         tx = pinSetter.nextLine();
         if(tx.equals("LED")){
             currentUsed += 20;
+            numberOfPinsUsed ++;
         }
         if(tx.equals("")){
             currentUsed += 0;
@@ -387,6 +432,7 @@ public class PinoutTracker {
         }
         else{
             currentUsed += 30;
+            numberOfPinsUsed ++;
         }
         System.out.println("Pin TX to:" + tx);
         System.out.println("-----------------------------------------------");
@@ -395,17 +441,17 @@ public class PinoutTracker {
         if(currentUsed == 0){
             System.out.println("Nothing is connected to this board");
         }
-        if(currentUsed <= 300){
+        if(currentUsed <= 400){
             System.out.print(PinoutTracker.GREEN);
             System.out.println("Your setup is using " + currentUsed + "miliamps");
             System.out.print(PinoutTracker.RESET);
         }
-        if((currentUsed > 300)&&(currentUsed <= 530)){
+        if((currentUsed > 400)&&(currentUsed <= 730)){
             System.out.print(PinoutTracker.YELLOW);
             System.out.println("Your setup is using " + currentUsed + "miliamps");
             System.out.print(PinoutTracker.RESET);
         }
-        if(currentUsed > 530){
+        if(currentUsed > 730){
             System.out.print(PinoutTracker.RED);
             System.out.println("Your setup is using " + currentUsed + "miliamps; Please remove a device");
             System.out.print(PinoutTracker.RESET);
@@ -427,6 +473,35 @@ public class PinoutTracker {
         System.out.println(PinoutTracker.PURPLE + "RST" + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->RST {{{}}}{{{}}} RST<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + "RST");
         System.out.println(PinoutTracker.PURPLE + "GND" + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->GND {{{}}}{{{}}} RXD<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + rx);
         System.out.println(PinoutTracker.PURPLE + "VIN" + PinoutTracker.YELLOW + "@" + PinoutTracker.BLUE + " ->VIN {{{}}}{{{}}} TXD<- " + PinoutTracker.YELLOW + "@" + PinoutTracker.PURPLE + tx);
+
+    }
+    public void ChartLayoutGetter(){
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D2" + d2 );
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D3" + d3 );
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D4" + d4  );
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D5" + d5 );
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D6" + d6 );
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D7" + d7 );
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D8" + d8 );
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D9" + d9);
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D10" + d10);
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D11" + d11);
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D12" + d12);
+        System.out.println(PinoutTracker.PURPLE + "Digital Pin D13" +d13 + PinoutTracker.BLUE);
+        System.out.println( "Analog Pin A0" +a0);
+        System.out.println( "Analog Pin A1" +a1);
+        System.out.println( "Analog Pin A2" +a2);
+        System.out.println( "Analog Pin A3" +a3);
+        System.out.println( "Analog Pin A4" +a4);
+        System.out.println( "Analog Pin A5" +a5);
+        System.out.println( "Analog Pin A6" +a6);
+        System.out.println( "Analog Pin A7" +a7);
+        System.out.println(PinoutTracker.RED + "Serial Pin RXD" +rx);
+        System.out.println( "Serial Pin TXD" +tx);
+    }
+    public void AverageCurrentPerComponent(){
+        double AvrAmp = currentUsed/numberOfPinsUsed ;
+        System.out.println(PinoutTracker.GREEN + "The Average Amperage draw per component in your setup is: " + PinoutTracker.BLUE + AvrAmp + "mA");
 
     }
 }

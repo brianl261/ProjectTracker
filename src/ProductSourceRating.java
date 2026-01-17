@@ -1,23 +1,43 @@
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 public class ProductSourceRating {
     List<String> good = new ArrayList<>();
     List<String> avoid = new ArrayList<>();
     Scanner next = new Scanner(System.in);
+    public static final String RESET = "\u001B[0m";
+    public static final String RED = "\u001B[91m";
+    public static final String GREEN = "\u001B[92m";
+    public static final String BLUE = "\u001b[94m";
+    public static final String YELLOW = "\u001B[93m";
+    public static final String PURPLE = "\u001B[95m";
+    public ProductSourceRating() {
+    }
 
-    public ProductSourceRating(){
+    public void AddAvoid() {
+        while (true) {
+            System.out.println("Input a product name to avoid or type 'stop' to finish");
+            String input = next.nextLine();
+            if (input.equalsIgnoreCase("stop")) {
+                break;
+            }
+            avoid.add(input);
+            System.out.println(ProductSourceRating.RED + "Avoid list: " + avoid + ProductSourceRating.RESET);
+        }
+    }
 
+    public void AddgoodProducts() {
+        while (true) {
+            System.out.println("Input a good product name or type 'stop' to finish");
+            String input = next.nextLine();
+            if (input.equalsIgnoreCase("stop")) {
+                break;
+            }
+            good.add(input);
+            System.out.println(ProductSourceRating.BLUE +"Good list: " + good + ProductSourceRating.RESET);
+        }
     }
-    public String AddAvoid(){
-        System.out.println("input a product name");
-        avoid.add(next.nextLine());
-        System.out.println(avoid);
-    }
-    public String AddgoodProducts(){
-        System.out.println("input a product name");
-        good.add(next.nextLine());
-        System.out.println(avoid);
-    }
+
+
 }
