@@ -8,6 +8,7 @@ public class PowerCalculator {
     public static final String GREEN = "\u001B[92m";
     public static final String BLUE = "\u001b[94m";
     public static final String YELLOW = "\u001B[93m";
+    //Constructor with instance variables
     public PowerCalculator(){
         mA = 0;
         Amp = new Scanner(System.in);

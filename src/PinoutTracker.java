@@ -6,6 +6,7 @@ public class PinoutTracker {
     public static final String BLUE = "\u001b[94m";
     public static final String YELLOW = "\u001B[93m";
     public static final String PURPLE = "\u001B[95m";
+   //The following Strings are to indicate the pins on an Arduino board
     private String d2 = "";
     private String d3 = "";
     private String d4 = "";

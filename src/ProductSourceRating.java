@@ -12,6 +12,7 @@ public class ProductSourceRating {
     public static final String BLUE = "\u001b[94m";
     public static final String YELLOW = "\u001B[93m";
     public static final String PURPLE = "\u001B[95m";
+    //Constructor
     public ProductSourceRating() {
     }
     //Adds products to avoid list
